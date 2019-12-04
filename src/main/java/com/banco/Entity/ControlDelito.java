@@ -12,7 +12,7 @@ public class ControlDelito {
 	@Id
 	@Column(name ="idcontrol")
 	private long idcontrol;
-	
+	//HOLA
 	@Column(name= "cedula")
 	private long cedula;
 	

@@ -15,12 +15,12 @@ public class GastosMensuales {
 	private long idgastos;
 	
 	@Column(name="cantidad")
-	private long cantidad;
+	private String cantidad;
 	
 	
 	public GastosMensuales() {}
 	
-	public GastosMensuales(long idgastos, long cantidad) {
+	public GastosMensuales(long idgastos, String cantidad) {
 		super();
 		this.idgastos = idgastos;
 		this.cantidad = cantidad;
@@ -34,11 +34,11 @@ public class GastosMensuales {
 		this.idgastos = idgastos;
 	}
 
-	public long getCantidad() {
+	public String getCantidad() {
 		return cantidad;
 	}
 
-	public void setCantidad(long cantidad) {
+	public void setCantidad(String cantidad) {
 		this.cantidad = cantidad;
 	}
 	

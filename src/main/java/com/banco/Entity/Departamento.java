@@ -3,6 +3,7 @@ package com.banco.Entity;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Query;
 import javax.persistence.Table;
 
 @Entity
@@ -54,6 +55,7 @@ public class Departamento {
 	public void setIdPais(Long idPais) {
 		this.idPais = idPais;
 	}
+	
 
 	
 	

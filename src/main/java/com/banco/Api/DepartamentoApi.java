@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,6 +25,12 @@ public class DepartamentoApi {
 	public List<Departamento> ObtenerTodosLosDepartamentos(){
 		
 		return departamentoService.getAll();
+	}
+	
+	@GetMapping("/{idPais}")
+	public List<Departamento> ObtenerDepartamentosPorPais(@PathVariable Long idPais){
+		
+		return departamentoService.DepartamentosPorPais(idPais);
 	}
 
 	

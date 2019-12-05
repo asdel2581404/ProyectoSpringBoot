@@ -19,6 +19,44 @@ public class Ciudad {
 	
 	@Column(name="iddepto")
 	private Long idDepartamento;
+
+    public Ciudad() {}
+	public Ciudad(Long idCiudad, String nombre, Long idDepartamento) {
+		super();
+		this.idCiudad = idCiudad;
+		this.nombre = nombre;
+		this.idDepartamento = idDepartamento;
+	}
+
+
+	public Long getIdCiudad() {
+		return idCiudad;
+	}
+
+
+	public void setIdCiudad(Long idCiudad) {
+		this.idCiudad = idCiudad;
+	}
+
+
+	public String getNombre() {
+		return nombre;
+	}
+
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+
+	public Long getIdDepartamento() {
+		return idDepartamento;
+	}
+
+
+	public void setIdDepartamento(Long idDepartamento) {
+		this.idDepartamento = idDepartamento;
+	}
 	
 	
 	

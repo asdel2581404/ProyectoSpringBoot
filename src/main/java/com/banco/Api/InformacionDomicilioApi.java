@@ -22,10 +22,10 @@ public class InformacionDomicilioApi {
 	@Autowired
 	private InformacionDomicilioService infoDomicilioService;
 	
-	@GetMapping("/{Id}")
-	public InformacionDomicilio ObtenerDomicilio(@PathVariable Long Id){
+	@GetMapping("/{cedula}")
+	public InformacionDomicilio ObtenerDomicilio(@PathVariable Long cedula){
 		
-		return infoDomicilioService.getById(Id);
+		return infoDomicilioService.getById(cedula);
 		
 	}
 	

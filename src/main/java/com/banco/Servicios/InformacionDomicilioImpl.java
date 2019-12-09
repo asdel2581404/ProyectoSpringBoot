@@ -13,9 +13,9 @@ public class InformacionDomicilioImpl implements InformacionDomicilioService{
 	private InformacionDomicilioRepository infoRepository;
 	
 	@Override
-	public InformacionDomicilio getById(Long Id) {
+	public InformacionDomicilio getById(Long cedula) {
 	
-		return  infoRepository.findById(Id).isPresent() ? infoRepository.findById(Id).get():null ;
+		return  infoRepository.findByCliente(cedula);
 		
 	}
 

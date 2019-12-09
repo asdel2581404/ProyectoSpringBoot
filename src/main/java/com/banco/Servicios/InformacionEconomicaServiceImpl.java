@@ -29,7 +29,7 @@ public class InformacionEconomicaServiceImpl implements InformacionEconomicaServ
 	@Override
 	public InformacionEconomica ObtenerInformacionEconomicaPorCedula(Long Cedula) {
 		
-		return informacionEconomicaRepository.findByCliente(Cedula) ;
+		return informacionEconomicaRepository.findByCliente(Cedula);
 	}
 	
 

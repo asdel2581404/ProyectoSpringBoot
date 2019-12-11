@@ -6,4 +6,6 @@ import com.banco.Entity.ControlDelito;
 
 public interface ControlDelitoRepository extends CrudRepository<ControlDelito, Long> {
 	
+	public ControlDelito findBycedula(Long cedula);
+	
 }

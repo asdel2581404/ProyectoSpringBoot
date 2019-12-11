@@ -16,7 +16,7 @@ public class ControlDelitoServiceImpl implements ControlDelitoService {
 	@Override
 	public boolean getById(Long Id) {
 		
-		ControlDelito controldelito=controldelitorepository.findById(Id).isPresent() ?  controldelitorepository.findById(Id).get():null;
+		ControlDelito controldelito=controldelitorepository.findBycedula(Id);
 		 
 		if(controldelito != null) {
 			

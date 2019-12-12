@@ -13,16 +13,28 @@ public class Ocupacion {
 	@Column(name ="idocupacion")
 	private long idocupacion;
 	
-	@Column(name = "nombre")
+	@Column(name = "nombre" )
 	private String nombre;
+	
+	@Column(name = "prohibido")
+	private boolean prohibido;
 
 	
 	public Ocupacion() {}
 	
-	public Ocupacion(long idocupacion, String nombre) {
+	public Ocupacion(long idocupacion, String nombre, boolean prohibido) {
 		super();
 		this.idocupacion = idocupacion;
 		this.nombre = nombre;
+		this.prohibido= prohibido;
+	}
+
+	public boolean isProhibido() {
+		return prohibido;
+	}
+
+	public void setProhibido(boolean prohibido) {
+		this.prohibido = prohibido;
 	}
 
 	public long getIdocupacion() {

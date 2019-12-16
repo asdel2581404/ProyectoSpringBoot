@@ -20,4 +20,10 @@ public class OcupacionServiceImpl implements OcupacionService{
 		return (List<Ocupacion>) ocupacionrepository.findAll();
 	}
 
+	@Override
+	public Ocupacion getById() {
+		
+		return null;
+	}
+
 }

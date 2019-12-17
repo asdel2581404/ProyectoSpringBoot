@@ -32,6 +32,12 @@ public class DepartamentoApi {
 		
 		return departamentoService.DepartamentosPorPais(idPais);
 	}
+	
+	@GetMapping("PorId/{idDepartamento}")
+	public Departamento ObtenerDepartamentosPorId(@PathVariable Long idDepartamento){
+		
+		return departamentoService.DepartamentoPorId(idDepartamento);
+	}
 
 	
 	

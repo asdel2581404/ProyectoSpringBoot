@@ -27,4 +27,6 @@ public class CiudadServiceImpl implements CiudadService {
 		return (List<Ciudad>) ciudadRepository.findByDepartamento(idDepartamento);
 	}
 
+	
+
 }

@@ -30,6 +30,12 @@ public class DepartamentoServiceImpl implements DepartamentoService{
 		
 		return (List<Departamento>) departamentoRepository.findByPais(idPais);
 	}
+
+	@Override
+	public Departamento DepartamentoPorId(Long idDepartamento) {
+		
+		return departamentoRepository.findById(idDepartamento).isPresent() ? departamentoRepository.findById(idDepartamento).get():null;
+	}
 	
 	
 

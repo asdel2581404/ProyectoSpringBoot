@@ -9,4 +9,5 @@ public interface CiudadService {
 	
 	public List<Ciudad> getAll();
 	public  List<Ciudad> CiudadporPais(Long idDepartamento);
+	
 }

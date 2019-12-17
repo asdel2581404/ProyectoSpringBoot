@@ -33,6 +33,10 @@ public class CiudadApi {
 	}
 
 
-	
+	@GetMapping("PorId/{idCiudad}")
+	public Ciudad ObtenerCiudadporId(@PathVariable Long idCiudad){
+		
+		return ciudadService.CiudadPorId(idCiudad);
+	}
 	
 }

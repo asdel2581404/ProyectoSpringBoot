@@ -27,6 +27,12 @@ public class CiudadServiceImpl implements CiudadService {
 		return (List<Ciudad>) ciudadRepository.findByDepartamento(idDepartamento);
 	}
 
+	@Override
+	public Ciudad CiudadPorId(Long idCiudad) {
+		
+		return ciudadRepository.findById(idCiudad).isPresent() ? ciudadRepository.findById(idCiudad).get():null;
+	}
+
 	
 
 }

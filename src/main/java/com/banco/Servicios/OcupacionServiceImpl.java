@@ -21,9 +21,9 @@ public class OcupacionServiceImpl implements OcupacionService{
 	}
 
 	@Override
-	public Ocupacion getById() {
+	public Ocupacion getById(Long idOcupacion) {
 		
-		return null;
+		return ocupacionrepository.findById(idOcupacion).isPresent() ? ocupacionrepository.findById(idOcupacion).get():null;
 	}
 
 }

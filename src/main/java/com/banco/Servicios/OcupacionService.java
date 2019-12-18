@@ -7,6 +7,6 @@ import com.banco.Entity.Ocupacion;
 public interface OcupacionService {
 	
 	public List<Ocupacion> getAll();
-	public Ocupacion getById();
+	public Ocupacion getById( Long idOcupacion);
 
 }

@@ -21,4 +21,11 @@ public class PaisServiceImpl implements PaisService {
 		return (List<Pais>)paisRepository.findAll();
 	}
 
+
+	@Override
+	public Pais PaisPorId(Long idPais) {
+		
+		return paisRepository.findById(idPais).isPresent() ? paisRepository.findById(idPais).get():null;
+	}
+
 }

@@ -8,7 +8,6 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="clientes")
-
 public class Clientes {
 	
 	@Id
@@ -33,16 +32,13 @@ public class Clientes {
 	@Column(name="estadocivil")
 	private String estadocivil;
 	
-	@Lob
-	@Column(name = "imagencedula")
-	private byte[] imagencedula;
-	
+
 	
 	
 	public Clientes() {}
 	
 	public Clientes(long cedula, String nombre, String apellido, long celular, String email, String genero,
-			String estadocivil, byte[] imagencedula) {
+			String estadocivil) {
 		super();
 		this.cedula = cedula;
 		this.nombre = nombre;
@@ -51,7 +47,7 @@ public class Clientes {
 		this.email = email;
 		this.genero = genero;
 		this.estadocivil = estadocivil;
-		this.imagencedula = imagencedula;
+		
 	
 	}
 
@@ -111,15 +107,7 @@ public class Clientes {
 		this.estadocivil = estadocivil;
 	}
 
-	public byte[] getImagencedula() {
-		return imagencedula;
-	}
 
-	public void setImagencedula(byte[] imagencedula) {
-		this.imagencedula = imagencedula;
-	}
-
-	
 	
 	
 	

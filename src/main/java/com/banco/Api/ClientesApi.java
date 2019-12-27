@@ -29,7 +29,7 @@ public class ClientesApi {
 		
 	}
 	
-	@PostMapping("/insertarCliente")
+	@PostMapping(value="/insertarCliente")
 	public 	Clientes InsertarCliente(@RequestBody Clientes clientes) {
 		
 		return clientesService.insertAll(clientes);
